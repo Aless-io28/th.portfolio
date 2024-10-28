@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap");
+
+:root {
+  --back-color-pri: #292b32;
+  --back-color-sec: #292c2f;
+  --back-color-cont: #d1d0c5;
+
+  --text-color-pri: #d1d0c5;
+  --text-color-sec: #646669;
+  --text-color-cont: #292b32;
+
+  --accent-color-pri: #f4c829;
+  --accent-color-sec: #3ba151;
+  --accent-color-ter: #576ee3;
+
+  --border-color-pri: #363839;
+  --hover-color-pri: #22222281;
+  --hover-color-sec: #22222212;
+
+  --font-primary: "Rethink Sans", sans-serif;
+  --font-secondary: "Nunito", sans-serif;
+}
+
+html {
+  background-color: var(--back-color-pri);
+}
+
+* {
+  color: var(--text-color-pri);
+  font-family: var(--font-primary);
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 758px;
+  margin: 0 auto !important;
+  background-color: #2c2e3120;
+}
+
+.posts_container {
+  display: grid;
+  grid-template-columns: 55px 1fr 1fr;
+  gap: 2px;
+  grid-template-areas:
+    "img name name name"
+    "img txt txt txt"
+    "img cont cont cont"
+    "img bt bt bt";
+
+  > img {
+    grid-area: img;
+  }
+
+  > .post_ame {
+    grid-area: name;
+  }
+
+  > .post_txt {
+    grid-area: txt;
+  }
+
+  > .post_content {
+    grid-area: cont;
+  }
+
+  > .post_btn {
+    grid-area: bt;
+  }
+}
+
+.back_slush {
+  background-image: url(/public/back-slush.png);
+  background-repeat: repeat;
+  background-size: auto;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #666;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
