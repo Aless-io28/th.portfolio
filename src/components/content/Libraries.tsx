@@ -9,6 +9,7 @@ const dataLibraries = [
   { name: "Dotenv", link: "https://www.npmjs.com/package/dotenv" },
   { name: "Mysql2", link: "https://www.npmjs.com/package/mysql2" },
   { name: "Axios", link: "https://axios-http.com/" },
+  { name: "Zustand", link: "https://zustand-demo.pmnd.rs/" },
   {
     name: "Cookie-parser",
     link: "https://www.npmjs.com/package/cookie-parser",
