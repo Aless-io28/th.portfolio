@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import NavigationProvider from "./context/NavigationContext";
+import LoadApp from "./components/loading/LoadApp";
 
 const dataRoutes = [
   {
@@ -17,7 +18,7 @@ function App() {
   return (
     <NavigationProvider>
       <BrowserRouter>
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<LoadApp />}>
           <Routes>
             {dataRoutes.map((route) => (
               <Route

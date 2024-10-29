@@ -5,6 +5,7 @@ export default {
     extend: {
       backgroundImage: {
         rank: "linear-gradient(to bottom, rgba(80, 182, 80, 0.997), rgb(227, 206, 90), rgb(230, 73, 73))",
+        long: "linear-gradient(to bottom, #3ba151, #3ba151, #3ba151, #3ba15100)",
       },
       colors: {
         back: {

@@ -32,7 +32,7 @@ const Presentation = () => {
           visual en mis proyectos, pero sin perder la <b>creatividad</b>{" "}
           <span className="text-color-sec">♟</span>.
         </p>
-        <div className="flex flex-wrap gap-4 mt-6">
+        <div className="flex flex-wrap mt-6 gap-y-1 gap-x-4">
           <div className="flex items-center justify-start gap-1 text-color-sec">
             <IconLocation size="20px" className="mb-1" fill="#646669" />
             Perú
