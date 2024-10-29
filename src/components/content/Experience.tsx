@@ -11,7 +11,7 @@ const Experience = () => {
       <div className="absolute w-[4px] h-[80%] bottom-2 -left-0 z-10 bg-accent-sec rounded-full"></div>
       <h1 className="mb-4 text-xl font-bold">
         Experiencia{" "}
-        <span className="font-medium text-color-sec">{"ヽ(^o^)ノ"}</span>
+        {/* <span className="font-medium text-color-sec">{"ヽ(^o^)ノ"}</span> */}
       </h1>
       <div className="flex flex-col gap-4 ml-4">
         <div className="flex flex-row gap-3 text-md">

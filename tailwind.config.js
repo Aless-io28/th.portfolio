@@ -32,6 +32,10 @@ export default {
       },
       transitionTimingFunction: {
         coming: "cubic-bezier(0.33, 0.33, 0.36, 1.5)",
+        back: "cubic-bezier(0.22, 0.48, 0.64, 1.05)",
+      },
+      transitionDuration: {
+        nav: "350ms",
       },
     },
     plugins: [],

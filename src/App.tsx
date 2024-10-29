@@ -7,10 +7,10 @@ const dataRoutes = [
     path: "/",
     element: lazy(() => import("./page/Home")),
   },
-  // {
-  //   path: "/projects",
-  //   element: lazy(() => import("./page/Projects")),
-  // },
+  {
+    path: "*",
+    element: lazy(() => import("./page/Error")),
+  },
 ];
 
 function App() {

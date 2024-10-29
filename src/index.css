@@ -70,6 +70,19 @@ body {
   }
 }
 
+@media (max-width: 758px) {
+  .posts_container {
+    display: grid;
+    grid-template-columns: 55px 1fr 1fr;
+    gap: 2px;
+    grid-template-areas:
+      "img name name name"
+      "txt txt txt txt"
+      "cont cont cont cont"
+      "bt bt bt bt";
+  }
+}
+
 .back_slush {
   background-image: url(/public/back-slush.png);
   background-repeat: repeat;

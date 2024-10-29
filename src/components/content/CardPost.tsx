@@ -44,16 +44,16 @@ const CardPost = ({
   return (
     <section className="relative p-4 mt-6 rounded-md posts_container hover:bg-back-hov2">
       <img src={img} alt="" className="w-[42px] rounded-full aspect-square" />
-      <div className="flex items-start justify-start gap-4 post_name h-max">
+      <div className="flex items-start justify-start gap-4 mt-2 md:mt-0 post_name h-max">
         <h1 className="text-lg font-bold">{name}</h1>
-        <p className="mt-[7px] text-sm text-color-sec">{date}</p>
+        <p className="mt-[5px] text-sm text-color-sec w-max">{date}</p>
         {fixed && (
           <span className="absolute ml-auto right-4 top-5">
             <IconFixed size="18px" fill="#646669" />
           </span>
         )}
       </div>
-      <div className="post_txt">
+      <div className="mt-3 post_txt md:mt-0">
         <p>{text}</p>
       </div>
       <div className="relative mb-4 mt-7 post_content">{children}</div>

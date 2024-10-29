@@ -10,7 +10,7 @@ export const NavigationContext = createContext<NavigationContextType>(
 );
 
 const NavigationProvider = ({ children }: { children: React.ReactNode }) => {
-  const [page, setPage] = useState<string>("");
+  const [page, setPage] = useState<string>("0");
 
   return (
     <NavigationContext.Provider value={{ page, setPage }}>

@@ -3,7 +3,7 @@ import { IconRedirect } from "../icons/IconsProf";
 
 const CardProject = ({ props }: { props: CardProjectProps }) => {
   return (
-    <article className="w-[45%] p-3 py-4 border-2 rounded-md border-back-bor group hover:shadow-md">
+    <article className="w-90% sm:w-[45%] p-3 py-4 border-2 rounded-md border-back-bor group hover:shadow-md">
       <div className="w-full overflow-hidden rounded-md h-[240px]">
         <img
           src={props.image}

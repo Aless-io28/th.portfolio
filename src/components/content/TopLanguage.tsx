@@ -115,7 +115,7 @@ const TopLanguage = () => {
       <div className="absolute w-[5px] h-[99%] bottom-0 -left-0  z-10 bg-rank rounded-full"></div>
       <div className="flex flex-col gap-8 ml-5">
         {dataLanguages.map((languages, index) => (
-          <div key={index} className="flex flex-wrap gap-8">
+          <div key={index} className="flex flex-wrap gap-4 sm:gap-8">
             {languages.map((language, index) => (
               <BtnLink key={index} href={language.link} title={language.name}>
                 {language.icon}
