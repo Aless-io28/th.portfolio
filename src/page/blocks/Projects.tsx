@@ -1,5 +1,6 @@
 import CardProject from "../../components/content/CardProject";
 import Footer from "../../components/header/Footer";
+import LoadApp from "../../components/loading/LoadApp";
 import { dataProjects } from "../../data/DataProjects";
 import useNavbar from "../../hooks/useNavbar";
 
@@ -11,6 +12,7 @@ const Projects = () => {
         page == "1" ? "relative translate-x-0" : "absolute  translate-x-[100%]"
       } w-[100%] top-0 transition-transform duration-nav ease-back`}
     >
+      <LoadApp />
       <section className="flex flex-wrap items-stretch justify-center gap-8">
         {dataProjects.map((item, index) => (
           <CardProject props={item} key={index} />

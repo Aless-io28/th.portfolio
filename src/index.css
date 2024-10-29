@@ -2,21 +2,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap");
 
 :root {
-  --back-color-pri: #22252f;
-  --back-color-sec: #282d31;
-  --back-color-cont: #d1d0c5;
+  --back-color-pri: #1e212b;
+  --back-color-sec: #21252e;
+  --back-color-cont: #d2d5e2;
 
-  --text-color-pri: #d1d0c5;
-  --text-color-sec: #646669;
-  --text-color-cont: #22252f;
+  --text-color-pri: #d2d5e2;
+  --text-color-sec: #606368;
+  --text-color-cont: #1e212b;
 
   --accent-color-pri: #f4c829;
   --accent-color-sec: #3ba151;
   --accent-color-ter: #576ee3;
 
   --border-color-pri: #363839;
-  --hover-color-pri: #2222228d;
-  --hover-color-sec: #22222215;
+  --hover-color-pri: #22222575;
+  --hover-color-sec: #22222525;
 
   --font-primary: "Rethink Sans", sans-serif;
   --font-secondary: "Nunito", sans-serif;
