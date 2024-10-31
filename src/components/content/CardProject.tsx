@@ -3,7 +3,7 @@ import { IconRedirect } from "../icons/IconsProf";
 
 const CardProject = ({ props }: { props: CardProjectProps }) => {
   return (
-    <article className="mx-4 sm:mx-0 w-90% sm:w-[45%] p-3 py-4 border-2 rounded-md border-back-bor group hover:shadow-md">
+    <article className="w-[80%] xs:min-w-[300px] xs:w-[45%] p-3 py-4 border-2 transition-shadow duration-300 rounded-md border-back-bor group hover:shadow-md">
       <div className="w-full overflow-hidden rounded-md h-[240px]">
         <img
           src={props.image}
@@ -26,7 +26,11 @@ const CardProject = ({ props }: { props: CardProjectProps }) => {
         className="flex items-center gap-1 hover:underline text-color-sec"
       >
         Ver proyecto{" "}
-        <IconRedirect size="20px" className="mt-1 -rotate-90" fill="#646669" />
+        <IconRedirect
+          size="20px"
+          className="mt-[2px] -rotate-90"
+          fill="#646669"
+        />
       </a>
     </article>
   );

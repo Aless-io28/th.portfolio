@@ -25,10 +25,10 @@ const dataLibraries = [
 const Libraries = () => {
   return (
     <CardPost
-      img="/catPerfil.png"
+      img="/profile.png"
       name="Alessio"
       date="Octubre 2024"
-      text="Algunas librerías que he utilizado en mis proyectos 👾"
+      text="Algunas librerías que he implementado en mis proyectos 📚"
     >
       <div className="flex flex-col w-full gap-5">
         <div className="flex flex-wrap gap-4">

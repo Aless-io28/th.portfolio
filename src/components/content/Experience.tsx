@@ -5,12 +5,12 @@ const dataExperience = [
     year: 2024,
     info: [
       {
-        title: "Creación de una página web para una galería de arte",
+        title: "Creación de una página web para una galería de arte.",
         skills: ["React", "Tailwind"],
       },
       {
         title:
-          "Implementación de un sistema para la optimización de procesos empresariales",
+          "Implementación de un sistema para la optimización de procesos empresariales.",
         skills: ["React", "Tailwind", "NodeJs", "MySql"],
       },
     ],
@@ -19,9 +19,8 @@ const dataExperience = [
     year: 2023,
     info: [
       {
-        title:
-          "Implementación de un sistema para la optimización de procesos empresariales",
-        skills: ["React", "Tailwind", "NodeJs", "MySql"],
+        title: "Desarrollo de un sistema de reservas hoteleras.",
+        skills: ["PHP", "Bootstrap", "Laragon", "MySql"],
       },
     ],
   },
@@ -30,10 +29,10 @@ const dataExperience = [
 const Experience = () => {
   return (
     <CardPost
-      img="/catPerfil.png"
+      img="/profile.png"
       name="Alessio"
       date="Octubre 2024"
-      text="Aprendiendo con proyectos reales y de forma autodidacta 😎"
+      text="Resumen de los proyectos claves que he desarrollado en los últimos años 👨‍💻"
       fixed={true}
     >
       <h1 className="mb-4 text-xl font-bold">
@@ -41,7 +40,7 @@ const Experience = () => {
         {/* <span className="font-medium text-color-sec">{"ヽ(^o^)ノ"}</span> */}
       </h1>
       <div className="relative flex flex-col gap-4 ml-4">
-        <div className="absolute w-[4px] h-[100%] bottom-0 -left-4 z-10 bg-long rounded-full"></div>
+        <div className="absolute w-[4px] h-[105%] -bottom-3 -left-4 z-10 bg-long rounded-full"></div>
         {dataExperience.map((experience, index) => (
           <div key={index} className="flex flex-row gap-3">
             <p className="px-1 rounded-md bg-accent-sec h-max">
@@ -54,7 +53,7 @@ const Experience = () => {
                   <ul className="flex flex-wrap gap-x-3">
                     {info.skills.map((skill, index) => (
                       <li key={index} className="text-color-sec">
-                        {skill}
+                        • {skill}
                       </li>
                     ))}
                   </ul>

@@ -57,10 +57,10 @@ const dataTools = [
 const Tools = () => {
   return (
     <CardPost
-      img="/catPerfil.png"
+      img="/profile.png"
       name="Alessio"
       date="Octubre 2024"
-      text="Herramientas que uso en mis proyectos 🛠️"
+      text="Herramientas claves en mi flujo de trabajo 🛠️"
     >
       <div className="flex flex-wrap w-full gap-1">
         {dataTools.map((tool, index) => (

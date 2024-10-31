@@ -16,7 +16,7 @@
 
   --border-color-pri: #33343d;
   --hover-color-pri: #22222575;
-  --hover-color-sec: #22222525;
+  --hover-color-sec: #22222530;
 
   --font-primary: "Rethink Sans", sans-serif;
   --font-secondary: "Nunito", sans-serif;
@@ -34,9 +34,9 @@ html {
 }
 
 body {
-  max-width: 758px;
+  /* max-width: 758px; */
+  /* background-color: #262a3340; */
   margin: 0 auto !important;
-  background-color: #2c2e3120;
 }
 
 .posts_container {

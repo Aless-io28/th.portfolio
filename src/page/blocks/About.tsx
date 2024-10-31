@@ -9,7 +9,7 @@ const About = () => {
   const { page } = useNavbar();
 
   return (
-    <div
+    <section
       className={`${
         page == "0" ? "relative translate-x-0" : "absolute -translate-x-[100%]"
       } flex flex-col w-[100%] top-0 left-0 transition-transform duration-nav ease-back`}
@@ -19,7 +19,7 @@ const About = () => {
       <Tools />
       <Libraries />
       <Footer />
-    </div>
+    </section>
   );
 };
 

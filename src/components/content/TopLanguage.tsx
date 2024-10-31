@@ -107,10 +107,10 @@ const dataLanguages = [
 const TopLanguage = () => {
   return (
     <CardPost
-      img="/catPerfil.png"
+      img="/profile.png"
       name="Alessio"
       date="Octubre 2024"
-      text="Lenguajes, estructuras, bases y frameworks que más he aprendido 🦾"
+      text="Principales lenguajes, frameworks, etc. que he dominado en mis proyectos 💻"
     >
       <div className="absolute w-[5px] h-[99%] bottom-0 -left-0  z-10 bg-rank rounded-full"></div>
       <div className="flex flex-col gap-8 ml-5">
