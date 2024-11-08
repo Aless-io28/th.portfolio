@@ -46,11 +46,11 @@ const Presentation = () => {
         </p>
         <div className="flex flex-wrap mt-6 gap-y-1 gap-x-4">
           <div className="flex items-center justify-start gap-1 text-color-sec">
-            <IconLocation size="20px" className="mb-1" fill="#646669" />
+            <IconLocation size="20px" className="mb-1" fill={dataProfile.svg} />
             Perú
           </div>
           <div className="flex items-center justify-start gap-1 text-color-sec">
-            <IconAge size="22px" className="mb-1" fill="#646669" />
+            <IconAge size="22px" className="mb-1" fill={dataProfile.svg} />
             28 de Octubre del 200*
           </div>
         </div>

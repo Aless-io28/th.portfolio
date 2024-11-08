@@ -21,7 +21,7 @@ export const dataNetworks = [
   // },
   {
     link: "mailto:alessio.ths8@gmail.com",
-    icon: <IconGmail size="27px" className="mt-[1px]" />,
+    icon: <IconGmail size="26px" className="mt-[1px]" />,
   },
   // {
   //   link: "https://x.com/home",
@@ -30,6 +30,7 @@ export const dataNetworks = [
 ];
 
 const Footer = () => {
+  const year = new Date().getFullYear();
   return (
     <footer className="flex flex-col items-center justify-center w-full gap-4 py-5 mt-10 ">
       <div className="flex items-center justify-center gap-4">
@@ -46,7 +47,7 @@ const Footer = () => {
         ))}
       </div>
       <div>
-        <p className="text-xs font-sec text-color-pri">th.Alessio © 2004</p>
+        <p className="text-xs font-sec text-color-pri">th.Alessio © {year}</p>
       </div>
     </footer>
   );
