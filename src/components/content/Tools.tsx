@@ -1,3 +1,4 @@
+import { dataProfile } from "../../data/DataProfile";
 import BtnLink from "../buttons/BtnLink";
 import {
   IconGit,
@@ -57,7 +58,7 @@ const dataTools = [
 const Tools = () => {
   return (
     <CardPost
-      img="/profile.png"
+      img={dataProfile.path}
       name="Alessio"
       date="Octubre 2024"
       text="Herramientas claves en mi flujo de trabajo 🛠️"

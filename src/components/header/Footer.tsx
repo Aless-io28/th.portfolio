@@ -1,32 +1,32 @@
 import {
   IconGmail,
-  IconInstagram,
   IconLinkedin,
-  IconX,
+  // IconInstagram,
+  // IconX,
 } from "../icons/IconsNet";
 import { IconGitHub } from "../icons/IconsProgramming";
 
-const dataNetworks = [
+export const dataNetworks = [
   {
-    link: "https://github.com/AlessioTh",
+    link: "https://github.com/Aless-io28",
     icon: <IconGitHub size="26px" sizeY="24px" />,
   },
   {
-    link: "https://github.com/AlessioTh",
-    icon: <IconLinkedin size="28px" />,
+    link: "https://www.linkedin.com/in/alessio-fernandez-406244336/",
+    icon: <IconLinkedin size="29px" className="mt-[1.5px]" />,
   },
+  // {
+  //   link: "https://instagram.com/alessioth",
+  //   icon: <IconInstagram size="26px" />,
+  // },
   {
-    link: "https://instagram.com/alessioth",
-    icon: <IconInstagram size="26px" />,
+    link: "mailto:alessio.ths8@gmail.com",
+    icon: <IconGmail size="27px" className="mt-[1px]" />,
   },
-  {
-    link: "https://mail.google.com/mail/u/0/#inbox",
-    icon: <IconGmail size="24px" />,
-  },
-  {
-    link: "https://x.com/home",
-    icon: <IconX size="22px" />,
-  },
+  // {
+  //   link: "https://x.com/home",
+  //   icon: <IconX size="22px" />,
+  // },
 ];
 
 const Footer = () => {

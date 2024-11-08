@@ -1,3 +1,4 @@
+import { dataProfile } from "../../data/DataProfile";
 import BtnFollow from "../buttons/BtnFollow";
 import BtnSimple from "../buttons/BtnSimple";
 import { IconEmail } from "../icons/IconsNet";
@@ -8,14 +9,17 @@ const Presentation = () => {
     <section className="flex flex-col justify-start w-full gap-2">
       <div className="flex items-end justify-between w-full">
         <img
-          src="/profile.png"
+          src={dataProfile.path}
           alt=""
           draggable="false"
-          className="h-[85px] xs:h-[100px] md:h-[140px] object-cover rounded-full aspect-square border-2 border-white"
+          className="h-[85px] xs:h-[100px] md:h-[140px] object-cover rounded-full aspect-square border-4 border-back-sec shadow-md"
         />
         <div className="flex justify-center gap-4">
-          <BtnSimple className="rounded-full">
-            <IconEmail size="20px" className="mt-1" />
+          <BtnSimple
+            className="flex items-center justify-center rounded-full"
+            href="mailto:alessio.ths8@gmail.com"
+          >
+            <IconEmail size="20px" />
           </BtnSimple>
           <BtnFollow className="" text="Seguir-Siguiendo" />
         </div>

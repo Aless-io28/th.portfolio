@@ -1,3 +1,4 @@
+import { dataProfile } from "../../data/DataProfile";
 import BtnSimple from "../buttons/BtnSimple";
 import CardPost from "./CardPost";
 
@@ -25,7 +26,7 @@ const dataLibraries = [
 const Libraries = () => {
   return (
     <CardPost
-      img="/profile.png"
+      img={dataProfile.path}
       name="Alessio"
       date="Octubre 2024"
       text="Algunas librerías que he implementado en mis proyectos 📚"

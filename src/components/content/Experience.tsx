@@ -1,3 +1,4 @@
+import { dataProfile } from "../../data/DataProfile";
 import CardPost from "./CardPost";
 
 const dataExperience = [
@@ -29,7 +30,7 @@ const dataExperience = [
 const Experience = () => {
   return (
     <CardPost
-      img="/profile.png"
+      img={dataProfile.path}
       name="Alessio"
       date="Octubre 2024"
       text="Resumen de los proyectos claves que he desarrollado en los últimos años 👨‍💻"

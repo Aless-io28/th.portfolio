@@ -17,6 +17,7 @@ import {
   IconTs,
 } from "../icons/IconsProgramming";
 import BtnLink from "../buttons/BtnLink";
+import { dataProfile } from "../../data/DataProfile";
 
 const dataLanguages = [
   [
@@ -107,7 +108,7 @@ const dataLanguages = [
 const TopLanguage = () => {
   return (
     <CardPost
-      img="/profile.png"
+      img={dataProfile.path}
       name="Alessio"
       date="Octubre 2024"
       text="Principales lenguajes, frameworks, etc. que he dominado en mis proyectos 💻"
