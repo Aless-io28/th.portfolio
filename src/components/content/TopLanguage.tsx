@@ -4,14 +4,12 @@ import {
   IconBootstrap,
   IconCss,
   IconExpress,
-  IconFlask,
   IconHtml,
   IconJs,
   IconMySql,
   IconNextJs,
   IconNode,
   IconPhp,
-  IconPython,
   IconReact,
   IconTailwind,
   IconTs,
@@ -91,18 +89,18 @@ const dataLanguages = [
       icon: <IconPhp size="43px" />,
     },
   ],
-  [
-    {
-      name: "Python",
-      link: "https://python.org/",
-      icon: <IconPython size="36px" />,
-    },
-    {
-      name: "Flask",
-      link: "https://flask.palletsprojects.com/",
-      icon: <IconFlask size="44px" sizeY="38px" />,
-    },
-  ],
+  // [
+  //   {
+  //     name: "Python",
+  //     link: "https://python.org/",
+  //     icon: <IconPython size="36px" />,
+  //   },
+  //   {
+  //     name: "Flask",
+  //     link: "https://flask.palletsprojects.com/",
+  //     icon: <IconFlask size="44px" sizeY="38px" />,
+  //   },
+  // ],
 ];
 
 const TopLanguage = () => {

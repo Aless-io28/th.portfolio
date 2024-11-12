@@ -43,7 +43,11 @@ const CardPost = ({
 
   return (
     <article className="relative p-4 mt-6 rounded-md posts_container hover:bg-back-hov2">
-      <img src={img} alt="" className="w-[42px] rounded-full aspect-square" />
+      <img
+        src={img}
+        alt=""
+        className="w-[42px] rounded-full aspect-square bg-back-cont"
+      />
       <div className="flex items-start justify-start gap-4 mt-2 md:mt-0 post_name h-max">
         <h1 className="text-lg font-bold">{name}</h1>
         <p className="mt-[6px] text-sm text-color-sec w-max">{date}</p>

@@ -7,6 +7,8 @@ export default {
         rank: "linear-gradient(to bottom, rgba(80, 182, 80, 0.997), rgb(227, 206, 90), rgb(230, 73, 73))",
         long: "linear-gradient(to bottom, #3ba151, #3ba151, #3ba151, #3ba15100)",
         sul: "radial-gradient(circle at 50% 50%, rgba(0, 123, 255, 0.4) 10%, rgba(0, 123, 255, 0) 50%)",
+        light:
+          "radial-gradient(circle, rgba(255, 255, 135, 0.517) 0%, rgba(255, 255, 188, 0.221) 60%, transparent 98%)",
       },
       colors: {
         back: {
@@ -40,7 +42,7 @@ export default {
         nav: "350ms",
       },
       screens: {
-        xs: "480px",
+        xs: "494px",
       },
     },
     plugins: [],

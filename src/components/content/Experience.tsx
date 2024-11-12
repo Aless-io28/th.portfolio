@@ -41,9 +41,10 @@ const Experience = () => {
         {/* <span className="font-medium text-color-sec">{"ヽ(^o^)ノ"}</span> */}
       </h1>
       <div className="relative flex flex-col gap-4 ml-4">
-        <div className="absolute w-[4px] h-[105%] -bottom-3 -left-4 z-10 bg-long rounded-full"></div>
+        <div className="absolute w-[4px] h-[110%] -bottom-3 -left-4 z-10 bg-accent-sec rounded-full"></div>
         {dataExperience.map((experience, index) => (
-          <div key={index} className="flex flex-row gap-3">
+          <div key={index} className="relative flex flex-row gap-3">
+            <div className="absolute w-[10px] aspect-square rounded-full -left-[19px] top-2 bg-accent-sec"></div>
             <p className="px-1 rounded-md bg-accent-sec h-max">
               {experience.year}
             </p>

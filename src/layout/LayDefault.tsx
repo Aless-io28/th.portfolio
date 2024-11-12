@@ -6,7 +6,7 @@ import Gradient from "../components/mouse/Gradient";
 const LayDefault = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
-      <div className="relative overflow-hidden max-w-[758px] mx-auto z-10 bg-[#24283050]">
+      <div className="relative md:mt-4 rounded-t-lg overflow-hidden max-w-[758px] mx-auto z-10 bg-[#24283050]">
         <HeadCont />
         <div className="px-3 xs:px-6 md:px-12">
           <Presentation />

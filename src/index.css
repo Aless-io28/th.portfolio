@@ -1,14 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap");
 
 :root {
-  --back-color-pri: #121624;
-  --back-color-sec: #181d2c;
-  --back-color-cont: #dee2f1;
+  --back-color-pri: #22232b;
+  --back-color-sec: #25262e;
+  --back-color-cont: #edf0fc;
 
-  --text-color-pri: #dee2f1;
-  --text-color-sec: #545d6c;
-  --text-color-cont: #121624;
+  --text-color-pri: #f0f2f8;
+  --text-color-sec: #616279;
+  --text-color-cont: #1b1e27;
 
   --accent-color-pri: #f4c829;
   --accent-color-sec: #3ba151;
@@ -18,7 +19,8 @@
   --hover-color-pri: #27273975;
   --hover-color-sec: #27273930;
 
-  --font-primary: "Rethink Sans", sans-serif;
+  /* --font-primary: "Rethink Sans", sans-serif; */
+  --font-primary: "Quicksand", sans-serif;
   --font-secondary: "Nunito", sans-serif;
 }
 
@@ -106,6 +108,33 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background-color: #555;
+}
+
+/*  */
+.luz_lmp {
+  clip-path: polygon(40% 0, 60% 0, 100% 100%, 0 100%);
+  /* background: radial-gradient(
+    circle,
+    rgba(255, 255, 135, 0.517) 0%,
+    rgba(255, 255, 188, 0.221) 60%,
+    transparent 98%
+  ); */
+  animation: luzFading 0.5s infinite alternate;
+}
+
+@keyframes luzFading {
+  0% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0.9;
+  }
+  60% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0.8;
+  }
 }
 
 /*  */

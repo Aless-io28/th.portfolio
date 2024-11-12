@@ -7,39 +7,47 @@ import { IconAge, IconLocation } from "../icons/IconsProf";
 const Presentation = () => {
   return (
     <section className="flex flex-col justify-start w-full gap-2">
-      <div className="flex items-end justify-between w-full">
-        <img
+      <div className="flex items-end justify-between w-full h-12 xs:h-14 md:h-16">
+        {/* <img
           src={dataProfile.path}
           alt=""
           draggable="false"
-          className="h-[85px] xs:h-[100px] md:h-[140px] object-cover rounded-full aspect-square border-4 border-back-sec shadow-md"
-        />
-        <div className="flex justify-center gap-4">
+          className="h-[85px] xs:h-[100px] bg-white md:h-[140px] object-cover rounded-full aspect-square border-4 border-back-sec shadow-md"
+        /> */}
+        <div className="relative h-[85px] xs:h-[100px] bg-back-cont md:h-[140px] object-cover rounded-full aspect-square border-4 border-back-sec shadow-md">
+          <img
+            src={dataProfile.path}
+            alt=""
+            draggable="false"
+            className="object-cover w-full h-full transition-transform duration-300 rounded-full hover:scale-105 ease-coming"
+          />
+        </div>
+        <div className="flex justify-center gap-4 md:mb-2">
           <BtnSimple
             className="flex items-center justify-center rounded-full"
             href="mailto:alessio.ths8@gmail.com"
           >
-            <IconEmail size="20px" />
+            <IconEmail size="20px" className="mt-[1px]" />
           </BtnSimple>
           <BtnFollow className="" text="Seguir-Siguiendo" />
         </div>
       </div>
       <div className="w-[90%]">
-        <h1 className="mb-2 text-4xl leading-snug font-sec">
-          th.<span className="text-accent-pri">Alessio</span>
+        <h1 className="mb-2 text-4xl leading-snug tracking-wide font-sec">
+          th.<span className="text-accent-pri font-sec">Alessio</span>
         </h1>
-        <p className="mb-2 text-color-pri">
+        <p className="mb-2 tracking-wide text-color-pri">
           Soy un desarrollador web <b>Full-Stack </b>
-          <span className="text-color-sec">{"</>"}</span>.
+          Junior <span className="text-color-sec">{"</>"}</span>.
         </p>
-        <p className="mb-2 text-color-pri">
+        <p className="mb-2 tracking-wide text-color-pri">
           Con más de un año de experiencia como practicante, culminando la
           carrera de <b>Desarrollo de software</b>, disfruto{" "}
           <b>enfrentar desafíos</b> que me permiten aprender y mejorar mis
           habilidades.
           <span className="text-color-sec">{" ツ"}</span>.
         </p>
-        <p>
+        <p className="mb-2 tracking-wide text-color-pri">
           Teniendo un enfoque en lo <b>minimalista</b> y aprecio la simplicidad
           visual en mis proyectos, pero sin perder la <b>creatividad</b>{" "}
           <span className="text-color-sec">♟</span>.
