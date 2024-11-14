@@ -33,7 +33,7 @@ const Presentation = () => {
         </div>
       </div>
       <div className="w-[90%]">
-        <h1 className="mb-2 text-4xl leading-snug tracking-wide font-sec">
+        <h1 className="mb-4 text-3xl leading-snug tracking-wide md:text-4xl font-sec">
           th.<span className="text-accent-pri font-sec">Alessio</span>
         </h1>
         <p className="mb-2 tracking-wide text-color-pri">
