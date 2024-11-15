@@ -11,6 +11,7 @@ const ThreeLine = ({ hover }: { hover: boolean }) => {
     handleReset,
     setStateGame,
     stateGame,
+    cellsWin,
   } = useGameLine();
 
   // Drag and Drop for proyects
@@ -29,7 +30,9 @@ const ThreeLine = ({ hover }: { hover: boolean }) => {
           <div
             key={index}
             onClick={() => handleCellClick(index)}
-            className="text-xs md:text-lg relative flex items-center justify-center aspect-square  h-full  border-[3px] rounded-md cursor-pointer select-none border-back-bor"
+            className={`${
+              cellsWin.includes(index) ? "font-bold bg-back-hov" : ""
+            } text-xs md:text-lg relative flex shadow-md items-center border-back-bor transition-color duration-100 justify-center aspect-square  h-full border-[3px] rounded-md cursor-pointer select-none`}
           >
             {cells[index] == 1 && "X"}
             {cells[index] == 2 && "O"}
@@ -43,17 +46,17 @@ const ThreeLine = ({ hover }: { hover: boolean }) => {
       <div
         className={`${
           hover ? "opacity-100" : "opacity-0"
-        } transition-opacity duration-200 delay-300 ease-linear`}
+        } transition-opacity duration-200 delay-200 ease-linear`}
       >
         <div className="absolute flex flex-col items-end top-[15px] right-4  gap-3 xs:right-6 md:right-12">
           <div
-            className="flex items-center justify-center h-4 gap-2 p-3 border rounded-md cursor-pointer sm:p-4 w-max border-back-bor"
+            className="flex items-center justify-center h-4 gap-2 p-3 border rounded-md shadow-sm cursor-pointer sm:p-4 w-max border-back-bor"
             onClick={handleType}
           >
             {count == 9 ? "3x" : "4x"}
           </div>
           <div
-            className="flex items-center justify-center h-4 gap-2 p-3 tracking-wide border rounded-md cursor-pointer border-back-bor sm:p-4 w-max"
+            className="flex items-center justify-center h-4 gap-2 p-3 tracking-wide border rounded-md shadow-sm cursor-pointer border-back-bor sm:p-4 w-max"
             onClick={() => {
               handleReset();
               setStateGame(stateGame == 0 ? 1 : 0);
@@ -76,19 +79,19 @@ const ThreeLine = ({ hover }: { hover: boolean }) => {
           </div>
         </div>
 
-        <div className="absolute flex flex-col items-center justify-center h-4 gap-3 rounded-md sm:flex-row w-max bottom-9 sm:bottom-4 right-4 xs:right-6 md:right-12">
+        <div className="absolute flex flex-col items-center justify-center h-4 gap-3 sm:flex-row w-max bottom-9 sm:bottom-4 right-4 xs:right-6 md:right-12">
           {win && (
             <>
-              <div className="hidden sm:flex">
+              <div className="hidden text-sm sm:flex sm:text-md">
                 {win == "Empate" ? "Empate" : "Ganador " + win + ""}
               </div>
-              <div className="flex sm:hidden">
+              <div className="flex text-sm sm:hidden sm:text-md">
                 {win == "Empate" ? "Empate" : "gg " + win + ""}
               </div>
             </>
           )}
           <div
-            className="p-1 ml-2 border rounded-md cursor-pointer border-back-bor"
+            className="p-1 ml-2 border rounded-md shadow-sm cursor-pointer border-back-bor"
             onClick={handleReset}
           >
             <IconReload size="16px" className="mt-[0.5px]" />

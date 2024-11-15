@@ -88,7 +88,9 @@ const useGameLine = () => {
   const [stateGame, setStateGame] = useState<number>(0);
   const [win, setWin] = useState("");
   const timeoutRef = useRef<number | null>(null);
+  const [cellsWin, setCellsWin] = useState<number[]>([]);
 
+  // Click cell
   const handleCellClick = (index: number) => {
     const select = cells.filter((i) => i != 0);
     if (select.length % 2 != 0 && select.length != 0) return;
@@ -196,11 +198,14 @@ const useGameLine = () => {
     }, 500);
   };
 
+  // Reset
   const handleReset = () => {
+    setCellsWin([]);
     setCells(Array.from({ length: count }).fill(0));
     setWin("");
   };
 
+  // Check win
   useEffect(() => {
     const checkWin = () => {
       for (const condition of countWin) {
@@ -214,6 +219,7 @@ const useGameLine = () => {
           )
         ) {
           if (timeoutRef.current) clearTimeout(timeoutRef.current);
+          setCellsWin([a, b, c, d]);
           return setWin(values[0] === 1 ? "X" : "O");
         }
       }
@@ -224,6 +230,7 @@ const useGameLine = () => {
     checkWin();
   }, [cells]);
 
+  // Change type
   const handleType = () => {
     handleReset();
     setCount(count == 9 ? twoGame : 9);
@@ -239,6 +246,7 @@ const useGameLine = () => {
     handleType,
     stateGame,
     setStateGame,
+    cellsWin,
   };
 };
 
