@@ -6,13 +6,18 @@ const dataExperience = [
     year: 2024,
     info: [
       {
+        title:
+          "Desarrollo de un sistema para la optimización de procesos empresariales.",
+        skills: ["React", "TypeScript", "Tailwind", "NodeJs", "MySql"],
+      },
+      {
         title: "Creación de una página web para una galería de arte.",
-        skills: ["React", "Tailwind"],
+        skills: ["React", "TypeScript", "Tailwind"],
       },
       {
         title:
-          "Implementación de un sistema para la optimización de procesos empresariales.",
-        skills: ["React", "Tailwind", "NodeJs", "MySql"],
+          "Desarrollo de un sitio web para la empresa Vaya Valla Publicidad.",
+        skills: ["Astro", "Tailwind"],
       },
     ],
   },
@@ -21,7 +26,7 @@ const dataExperience = [
     info: [
       {
         title: "Desarrollo de un sistema de reservas hoteleras.",
-        skills: ["PHP", "Bootstrap", "Laragon", "MySql"],
+        skills: ["PHP", "Bootstrap", "jQuery", "Laragon", "MySql"],
       },
     ],
   },

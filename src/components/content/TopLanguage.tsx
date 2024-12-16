@@ -3,6 +3,7 @@ import {
   IconAstro,
   IconBootstrap,
   IconCss,
+  IconEmotion,
   IconExpress,
   IconHtml,
   IconJs,
@@ -47,19 +48,26 @@ const dataLanguages = [
       icon: <IconTailwind size="38px" />,
     },
     {
+      name: "Emotion",
+      link: "https://emotion.sh/docs/introduction",
+      icon: <IconEmotion size="38px" />,
+    },
+    {
       name: "TypeScript",
       link: "https://www.typescriptlang.org/",
       icon: <IconTs size="38px" />,
+    },
+  ],
+  [
+    {
+      name: "Node.js",
+      link: "https://nodejs.org/en/",
+      icon: <IconNode size="34px" className="mt-1" />,
     },
     {
       name: "Express",
       link: "https://expressjs.com/",
       icon: <IconExpress size="38px" />,
-    },
-    {
-      name: "Node.js",
-      link: "https://nodejs.org/en/",
-      icon: <IconNode size="34px" className="mt-1" />,
     },
     {
       name: "Bootstrap",

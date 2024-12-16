@@ -9,20 +9,20 @@ import { IconGitHub } from "../icons/IconsProgramming";
 export const dataNetworks = [
   {
     link: "https://github.com/Aless-io28",
-    icon: <IconGitHub size="26px" sizeY="24px" />,
+    icon: <IconGitHub size="28px" />,
   },
   {
     link: "https://www.linkedin.com/in/alessio-fernandez-406244336/",
-    icon: <IconLinkedin size="29px" className="mt-[1.5px]" />,
+    icon: <IconLinkedin size="28px" />,
+  },
+  {
+    link: "mailto:alessio.ths8@gmail.com",
+    icon: <IconGmail size="28px" />,
   },
   // {
   //   link: "https://instagram.com/alessioth",
   //   icon: <IconInstagram size="26px" />,
   // },
-  {
-    link: "mailto:alessio.ths8@gmail.com",
-    icon: <IconGmail size="26px" className="mt-[1px]" />,
-  },
   // {
   //   link: "https://x.com/home",
   //   icon: <IconX size="22px" />,
@@ -40,7 +40,7 @@ const Footer = () => {
             href={network.link}
             target="_blank"
             rel="noreferrer"
-            className="transition-all duration-200 hover:scale-110"
+            className="transition-all duration-200 hover:scale-105"
           >
             {network.icon}
           </a>

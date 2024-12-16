@@ -79,17 +79,19 @@ const ThreeLine = ({ hover }: { hover: boolean }) => {
           </div>
         </div>
 
-        <div className="absolute flex flex-col items-center justify-center h-4 gap-3 sm:flex-row w-max bottom-9 sm:bottom-4 right-4 xs:right-6 md:right-12">
-          {win && (
-            <>
-              <div className="hidden text-sm sm:flex sm:text-md">
-                {win == "Empate" ? "Empate" : "Ganador " + win + ""}
-              </div>
-              <div className="flex text-sm sm:hidden sm:text-md">
-                {win == "Empate" ? "Empate" : "gg " + win + ""}
-              </div>
-            </>
-          )}
+        <div className="absolute flex flex-col items-end justify-center h-4 gap-3 md:items-center sm:flex-row w-max bottom-9 sm:bottom-4 right-4 xs:right-6 md:right-12">
+          <div className="min-h-5">
+            {win && (
+              <>
+                <div className="hidden text-sm sm:flex sm:text-md">
+                  {win == "Empate" ? "Empate" : "Ganador " + win + ""}
+                </div>
+                <div className="flex text-sm sm:hidden sm:text-md">
+                  {win == "Empate" ? "Empate" : "gg " + win + ""}
+                </div>
+              </>
+            )}
+          </div>
           <div
             className="p-1 ml-2 border rounded-md shadow-sm cursor-pointer border-back-bor"
             onClick={handleReset}

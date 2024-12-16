@@ -30,7 +30,7 @@ const LayDefault = ({ children }: { children: React.ReactNode }) => {
   const handleMouseMove = (e: MouseEvent) => {
     const { clientX } = e;
     const deltaX = clientX - initialPosition.current.x;
-    const threshold = 90;
+    const threshold = 80;
     if (deltaX > threshold && initialPosition.current.x < clientX)
       return setPage("0");
     if (deltaX < -threshold && initialPosition.current.x > clientX)

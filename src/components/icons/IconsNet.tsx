@@ -6,18 +6,18 @@ type IconsProps = {
   state?: boolean;
 };
 
-export const IconLinkedin = ({ size, sizeY, className, fill }: IconsProps) => {
+export const IconLinkedin = ({ size, className }: IconsProps) => {
   return (
     <svg
       className={className}
       xmlns="http://www.w3.org/2000/svg"
       width={size}
-      height={sizeY || size}
+      height={size}
       viewBox="0 0 24 24"
     >
       <path
-        fill={fill || "currentColor"}
-        d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93zM6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37z"
+        fill="currentColor"
+        d="M17.303 2.25H6.697A4.447 4.447 0 0 0 2.25 6.697v10.606a4.447 4.447 0 0 0 4.447 4.447h10.606a4.447 4.447 0 0 0 4.447-4.447V6.697a4.447 4.447 0 0 0-4.447-4.447m-8.46 15.742a.4.4 0 0 1-.4.423h-1.78a.41.41 0 0 1-.4-.412V10.6a.4.4 0 0 1 .4-.411h1.78a.4.4 0 0 1 .4.411zM7.52 8.632a1.467 1.467 0 1 1 .022-2.935A1.467 1.467 0 0 1 7.52 8.63m10.817 9.35a.39.39 0 0 1-.378.388H16.08a.39.39 0 0 1-.378-.389v-3.424c0-.511.156-2.223-1.356-2.223c-1.179 0-1.412 1.2-1.457 1.734v3.991a.39.39 0 0 1-.378.39h-1.823a.39.39 0 0 1-.389-.39v-7.493a.39.39 0 0 1 .39-.378h1.822a.39.39 0 0 1 .39.378v.645a2.59 2.59 0 0 1 2.434-1.112c3.035 0 3.024 2.835 3.024 4.447z"
       />
     </svg>
   );
@@ -66,18 +66,18 @@ export const IconX = ({ size, sizeY, className, fill }: IconsProps) => {
   );
 };
 
-export const IconGmail = ({ size, sizeY, className, fill }: IconsProps) => {
+export const IconGmail = ({ size, className }: IconsProps) => {
   return (
     <svg
       className={className}
       xmlns="http://www.w3.org/2000/svg"
       width={size}
-      height={sizeY || size}
-      viewBox="0 0 432 384"
+      height={size}
+      viewBox="0 0 24 24"
     >
       <path
-        fill={fill || "currentColor"}
-        d="M384 21q18 0 30.5 12.5T427 64v256q0 18-12.5 30.5T384 363H43q-18 0-30.5-12.5T0 320V64q0-18 12.5-30.5T43 21zm0 86V64L213 171L43 64v43l170 106z"
+        fill="currentColor"
+        d="M20 18h-2V9.25L12 13L6 9.25V18H4V6h1.2l6.8 4.25L18.8 6H20m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2"
       />
     </svg>
   );
